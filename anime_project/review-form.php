@@ -24,14 +24,14 @@ if ($review_id != null) {
     // This is a security check, where users can only edit their OWN reviews
     if (
         $_SESSION["user"]["role"] !== "admin" &&
-        $review["user_id"] !== $_SESSION["user"]["id"]
+        $review["user_id"] != $_SESSION["user"]["id"]
     ) {
         header("Location: anime.php");
         exit();
     }
 }
 
-// This to check if teh form in submitted or not
+// This checks if the form is submitted or not
 if (isset($_POST["comment"])) {
     $comment = $_POST["comment"];
     $user_id = $_SESSION["user"]["id"];

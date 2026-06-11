@@ -1,5 +1,4 @@
 <?php
-// Require header, checks login and opens database
 require "header.php";
 
 // Get the anime_id from the URL e.g. review.php?anime_id=1

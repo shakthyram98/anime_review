@@ -1,5 +1,4 @@
 <?php
-// Require header — checks login and opens database
 require "header.php";
 
 // Admin only check — kick out if not admin
