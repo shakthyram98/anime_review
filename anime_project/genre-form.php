@@ -1,5 +1,4 @@
 <?php
-
 require "header.php";
 
 // Admin only check — kick out if not admin

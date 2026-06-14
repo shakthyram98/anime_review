@@ -1,5 +1,4 @@
 <?php
-// Connect to the database
 $db = new PDO("mysql:host=localhost;dbname=anime_db", "root", "");
 
 // Read the action from the URL e.g. ?action=getAllAnime
@@ -11,7 +10,7 @@ switch ($action) {
     case "getAllAnime":
         $query = "SELECT anime.*, genres.name as genre_name 
                   FROM anime 
-                  JOIN genres ON anime.genre_id = genres.id";
+                  JOIN genres ON anime.genre_id = genres.id"; // connection using foreign key
         $stmt = $db->prepare($query);
         $stmt->execute([]);
         $anime = $stmt->fetchAll(PDO::FETCH_ASSOC);

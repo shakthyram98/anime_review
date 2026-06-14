@@ -1,5 +1,4 @@
 <?php
-// Require header — checks login and opens database
 require "header.php";
 
 // Ask the waiter for all anime (JSON)
@@ -24,10 +23,10 @@ $anime_list = json_decode($json, true);
         <div class="d-flex justify-content-between align-items-center mb-4">
             <h1>Anime List</h1>
             <div>
-                <!-- Only admin sees the Manage buttons -->
+                <!-- only admin sees the Manage buttons -->
                 <?php if ($_SESSION["user"]["role"] == "admin"): ?>
                 <a href="anime-manage.php" class="btn btn-primary btn-sm me-2">Manage Anime</a>
-                <!-- New Manage Genres button for admin -->
+                <!-- new manage genres button for admin -->
                 <a href="genre-manage.php" class="btn btn-secondary btn-sm me-2">Manage Genres</a>
                 <?php endif; ?>
                 <a href="logout.php" class="btn btn-danger btn-sm">Logout</a>

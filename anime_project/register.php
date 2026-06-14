@@ -1,5 +1,4 @@
 <?php
-// Start the session so we can use $_SESSION
 session_start();
 
 // If already logged in, no need to be here, go to anime.php
@@ -60,30 +59,26 @@ if (isset($_POST["name"])) {
         <h1 class="h1 mb-4 text-center">Register</h1>
         <!-- Card gives a white box -->
         <div class="card p-4">
-            <!-- method POST hides the data from the URL -->
+            
             <form method="POST">
 
                 <div class="mb-3">
                     <label class="form-label">Name</label>
-                    <!-- name="name" is how PHP reads this input via $_POST['name'] -->
                     <input type="text" class="form-control" name="name" placeholder="Name"/>
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label">Email</label>
-                    <!-- name="email" is how PHP reads this input via $_POST['email'] -->
                     <input type="email" class="form-control" name="email" placeholder="Email"/>
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label">Password</label>
-                    <!-- name="password" is how PHP reads this input via $_POST['password'] -->
                     <input type="password" class="form-control" name="password" placeholder="Password"/>
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label">Confirm Password</label>
-                    <!-- name="confirm_password" is how PHP reads this via $_POST['confirm_password'] -->
                     <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password"/>
                 </div>
                 <!-- d-grid makes the button full width -->

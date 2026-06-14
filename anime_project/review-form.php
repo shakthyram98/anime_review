@@ -23,7 +23,7 @@ if ($review_id != null) {
 
     // This is a security check, where users can only edit their OWN reviews
     if (
-        $_SESSION["user"]["role"] !== "admin" &&
+        $_SESSION["user"]["role"] != "admin" &&
         $review["user_id"] != $_SESSION["user"]["id"]
     ) {
         header("Location: anime.php");

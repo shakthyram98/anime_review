@@ -59,18 +59,16 @@ if (isset($_POST["email"])) {
         <h1 class="h1 mb-4 text-center">Login</h1>
         <!-- Card gives a white box -->
         <div class="card p-4">
-            <!-- method POST hides the data from the URL -->
+
             <form method="POST">
 
                 <div class="mb-3">
                     <label class="form-label">Email</label>
-                    <!-- name="email" is how PHP reads this input via $_POST['email'] -->
                     <input type="email" class="form-control" name="email" placeholder="Email"/>
                 </div>
                 
                 <div class="mb-3">
                     <label class="form-label">Password</label>
-                    <!-- name="password" is how PHP reads this input via $_POST['password'] -->
                     <input type="password" class="form-control" name="password" placeholder="Password"/>
                 </div>
 

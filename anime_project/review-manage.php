@@ -18,7 +18,7 @@ if ($review_id != null) {
     $stmt->execute([":id" => $review_id]);
     $review = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    // If not admin AND nto the owner, kick out
+    // If not admin AND not the owner, kick out
     if (
         $_SESSION["user"]["role"] != "admin" &&
         $review["user_id"] != $_SESSION["user"]["id"]

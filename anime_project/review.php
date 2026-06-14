@@ -39,7 +39,7 @@ $anime = json_decode($anime_json, true);
 
         <!-- Top bar with back button and logout button -->
         <div class="d-flex justify-content-between align-items-center mb-4">
-            <a href="anime.php" class="btn btn-link">← Back to Anime List</a>
+            <a href="anime.php" class="btn btn-link">Back to Anime List</a>
             <a href="logout.php" class="btn btn-danger btn-sm">Logout</a>
         </div>
 
@@ -139,4 +139,4 @@ $anime = json_decode($anime_json, true);
     });
     </script>
 </body>
-</html>
+</html> 

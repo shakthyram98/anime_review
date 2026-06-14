@@ -98,9 +98,9 @@ if (isset($_POST["title"])) {
                         <?php foreach ($genres as $genre): ?>
                         <!-- If editing, pre-select the current genre -->
                         <option value="<?= $genre["id"] ?>" <?= $anime &&
-                        $anime["genre_id"] == $genre["id"]
-                            ? "selected"
-                            : "" ?>>
+$anime["genre_id"] == $genre["id"]
+    ? "selected"
+    : "" ?>>
                             <?= $genre["name"] ?>
                         </option>
                         <?php endforeach; ?>

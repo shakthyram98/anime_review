@@ -14,4 +14,3 @@ if (!isset($_SESSION["user"])) {
     exit();
 }
 ?>
-<!---Using this file, I don't need to put "$db = new PDO("mysql:host=localhost;dbname=anime_db", "root", "");" for every file. Just put "require('header.php')" at the top of every protected page.  --->
