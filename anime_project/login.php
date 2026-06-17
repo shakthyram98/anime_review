@@ -2,7 +2,7 @@
 // Start the session so we can use $_SESSION
 session_start();
 
-// If already logged in, no need to be here, go to anime.php
+// If already logged in, go to anime.php
 if (isset($_SESSION["user"])) {
     header("Location: anime.php");
     exit();

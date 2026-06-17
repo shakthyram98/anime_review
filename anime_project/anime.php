@@ -35,7 +35,7 @@ $anime_list = json_decode($json, true);
         <div class="row">
             <!-- Loop through each anime and display as a card -->
             <?php foreach ($anime_list as $anime): ?>
-            <div class="col-md-3 mb-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="card h-100">
 
                     <!-- Show image if it exists, show placeholder if it doesn't -->
