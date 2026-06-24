@@ -88,7 +88,7 @@ if (isset($_POST["name"])) {
                 
             </form>
         </div>
-        <!-- Link to login page for existing users -->
+        <!-- Link to login page for existing users, -->
         <div class="text-center mt-3">
             <a href="login.php">Already have an account? Login here</a>
         </div>
